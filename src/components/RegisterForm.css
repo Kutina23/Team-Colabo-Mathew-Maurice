@@ -1,0 +1,217 @@
+/* components/RegisterForm.css */
+
+/* Ensure modal displays properly */
+.modal.show {
+  display: block !important;
+}
+
+/* Modal enhancements */
+.modal-xl {
+  max-width: 900px;
+}
+
+.modal-content {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px 16px 0 0;
+}
+
+.modal-footer {
+  border-top: 1px solid #dee2e6;
+  border-radius: 0 0 16px 16px;
+}
+
+/* Form styling */
+.form-control, .form-select {
+  border-radius: 10px;
+  border: 2px solid #e9ecef;
+  padding: 12px 16px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+  transform: translateY(-1px);
+}
+
+.form-control.is-valid, .form-select.is-valid {
+  border-color: #198754;
+  background-image: none;
+}
+
+.form-control.is-invalid, .form-select.is-invalid {
+  border-color: #dc3545;
+  background-image: none;
+}
+
+/* Input group styling */
+.input-group .btn {
+  border-radius: 0 10px 10px 0;
+  border: 2px solid #e9ecef;
+  border-left: none;
+}
+
+.input-group .form-control {
+  border-radius: 10px 0 0 10px;
+}
+
+.input-group .form-control:focus + .btn {
+  border-color: #0d6efd;
+}
+
+/* Password strength indicator */
+.progress {
+  height: 6px;
+  border-radius: 3px;
+  background-color: #f8f9fa;
+}
+
+.progress-bar {
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+/* Form labels */
+.form-label {
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+/* Validation feedback */
+.invalid-feedback {
+  display: block;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* Benefits section */
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+/* Button enhancements */
+.btn {
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 10px 20px;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #0d6efd, #0056b3);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #0056b3, #004085);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  transform: translateY(-1px);
+}
+
+/* Checkbox styling */
+.form-check-input {
+  border-radius: 4px;
+  border: 2px solid #dee2e6;
+}
+
+.form-check-input:checked {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+/* Loading spinner */
+.spinner-border-sm {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Alert styling */
+.alert {
+  border-radius: 10px;
+  border: none;
+}
+
+.alert-danger {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .modal-xl {
+    max-width: 95%;
+    margin: 10px;
+  }
+  
+  .modal-body {
+    padding: 20px;
+  }
+  
+  .form-control, .form-select {
+    padding: 10px 14px;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+  }
+}
+
+/* Smooth animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-content {
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Focus states */
+.form-control:focus,
+.form-select:focus,
+.btn:focus {
+  outline: none;
+}
+
+/* Text enhancements */
+.text-success {
+  color: #198754 !important;
+}
+
+.text-danger {
+  color: #dc3545 !important;
+}
+
+.text-warning {
+  color: #ffc107 !important;
+}
+
+.text-info {
+  color: #0dcaf0 !important;
+}
