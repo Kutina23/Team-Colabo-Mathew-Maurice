@@ -159,7 +159,7 @@ const HeroSection = () => {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <h1 className="display-4 fw-bold text-white mb-4">
-                Unleash Your <span className="text-warning">STEM</span> Potential
+                Unleash Your <span className="text-warning">STEM</span> Potential With CTechlit
               </h1>
               <p className="lead text-white-50 mb-4">
                 Explore the fascinating world of Science, Technology, Engineering, and Mathematics
