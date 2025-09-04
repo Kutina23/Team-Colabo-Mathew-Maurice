@@ -54,7 +54,7 @@ const Navigation = ({ currentRole, setCurrentRole }) => {
         <div className="container">
           <a className="navbar-brand fw-bold fs-3" href="#home">
             <img
-              src="public/logo.png"
+              src="/Team-Colabo-Mathew-Maurice/logo.png"
               alt="CTechLit Logo"
               className="me-2"
               style={{ height: '32px', width: 'auto', backgroundColor: 'white', borderRadius: '4px', padding: '2px' }}
