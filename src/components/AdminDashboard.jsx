@@ -2,6 +2,15 @@
 import React, { useState } from 'react';
 import { Plus, Eye, Edit, Trash2, TrendingUp, Users, BookOpen, Activity, Award, BarChart3, GraduationCap } from 'lucide-react';
 import Sidebar from './Sidebar';
+import AdminUserManagement from './AdminUserManagement';
+import AdminCourseManagement from './AdminCourseManagement';
+import AdminAnalytics from './AdminAnalytics';
+import AdminReports from './AdminReports';
+import AdminSettings from './AdminSettings';
+import AdminSecurity from './AdminSecurity';
+import AdminDatabase from './AdminDatabase';
+import AdminNotifications from './AdminNotifications';
+import AdminHelp from './AdminHelp';
 
 const AdminDashboard = () => {
   const [activePage, setActivePage] = useState('dashboard');
@@ -12,11 +21,23 @@ const AdminDashboard = () => {
       case 'dashboard':
         return <DashboardContent />;
       case 'users':
-        return <UserManagementContent />;
+        return <AdminUserManagement />;
       case 'courses':
-        return <CourseManagementContent />;
+        return <AdminCourseManagement />;
       case 'analytics':
-        return <AnalyticsContent />;
+        return <AdminAnalytics />;
+      case 'reports':
+        return <AdminReports />;
+      case 'settings':
+        return <AdminSettings />;
+      case 'security':
+        return <AdminSecurity />;
+      case 'database':
+        return <AdminDatabase />;
+      case 'notifications':
+        return <AdminNotifications />;
+      case 'help':
+        return <AdminHelp />;
       default:
         return <DashboardContent />;
     }
@@ -314,70 +335,6 @@ const AdminDashboard = () => {
     </div>
   );
 
-  const UserManagementContent = () => (
-    <div className="dashboard-content">
-      <div className="d-flex justify-content-between align-items-center mb-4">
-        <h2>User Management</h2>
-        <button className="btn btn-primary">
-          <Plus size={16} className="me-1" />
-          Add New User
-        </button>
-      </div>
-      
-      <div className="card border-0 shadow-sm">
-        <div className="card-body">
-          <div className="table-responsive">
-            <table className="table table-hover">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Role</th>
-                  <th>Email</th>
-                  <th>Status</th>
-                  <th>Actions</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>John Smith</td>
-                  <td><span className="badge bg-primary">Student</span></td>
-                  <td>john@email.com</td>
-                  <td><span className="badge bg-success">Active</span></td>
-                  <td>
-                    <button className="btn btn-sm btn-outline-primary me-1"><Eye size={14} /></button>
-                    <button className="btn btn-sm btn-outline-warning me-1"><Edit size={14} /></button>
-                    <button className="btn btn-sm btn-outline-danger"><Trash2 size={14} /></button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Sarah Johnson</td>
-                  <td><span className="badge bg-info">Staff</span></td>
-                  <td>sarah@email.com</td>
-                  <td><span className="badge bg-success">Active</span></td>
-                  <td>
-                    <button className="btn btn-sm btn-outline-primary me-1"><Eye size={14} /></button>
-                    <button className="btn btn-sm btn-outline-warning me-1"><Edit size={14} /></button>
-                    <button className="btn btn-sm btn-outline-danger"><Trash2 size={14} /></button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-
-  const CourseManagementContent = () => (
-    <div className="dashboard-content">
-      <h2 className="mb-4">Course Management</h2>
-      <div className="card border-0 shadow-sm">
-        <div className="card-body">
-          <p>Course management interface would be implemented here.</p>
-        </div>
-      </div>
-    </div>
-  );
 
   const AnalyticsContent = () => (
     <div className="dashboard-content">

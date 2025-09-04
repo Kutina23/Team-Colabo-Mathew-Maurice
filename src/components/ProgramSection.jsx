@@ -9,7 +9,7 @@ const ProgramsSection = () => {
       description: 'Build and program autonomous robots using Arduino, Raspberry Pi, and advanced sensors.',
       icon: <Cpu className="text-primary" size={48} />,
       features: ['Hardware Assembly', 'Programming', 'AI Integration', 'Competition Prep'],
-      level: 'Beginner to Advanced'
+      level: 'Beginner'
     },
     {
       title: 'Scratch Programming',
