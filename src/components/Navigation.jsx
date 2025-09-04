@@ -53,7 +53,12 @@ const Navigation = ({ currentRole, setCurrentRole }) => {
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
         <div className="container">
           <a className="navbar-brand fw-bold fs-3" href="#home">
-            <Code className="me-2" size={32} />
+            <img
+              src="public/logo.png"
+              alt="CTechLit Logo"
+              className="me-2"
+              style={{ height: '32px', width: 'auto', backgroundColor: 'white', borderRadius: '4px', padding: '2px' }}
+            />
             CTechLit
           </a>
           
